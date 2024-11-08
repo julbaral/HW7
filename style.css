@@ -1,71 +1,96 @@
-@import url(https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC:regular);
-@import url(https://fonts.googleapis.com/css?family=Cormorant:300,regular,500,600,700,300italic,italic,500italic,600italic,700italic);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+/*шрифт лого*/ @import url(https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC:regular); 
+/*шрифт 1 секция*/ @import url(https://fonts.googleapis.com/css?family=Cormorant:300,regular,500,600,700,300italic,italic,500italic,600italic,700italic);
+/*шрифт навигации*/ @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic); 
+/*шрифт цитаты*/ @import url(https://fonts.googleapis.com/css?family=Cormorant:300,regular,500,600,700,300italic,italic,500italic,600italic,700italic);
 
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .logo {
-display: flex;
-flex-direction: column;
-text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 .logo p {
-    font-family: "IM Fell Great Primer SC Regular", serif;
+  font-family: "IM Fell Great Primer SC";
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
 }
 header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-width: 1200px;
-height: 142px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1200px;
+  height: 142px;
 }
 ul {
- display: flex;
- gap: 70px;   
- list-style: none;
- margin:0 60px 0 250px;
- font-family: "Open Sans", sans-serif;
+  display: flex;
+  gap: 70px;
+  list-style: none;
+  margin: 0 60px 0 250px;
+  font-family: "Open Sans", sans-serif;
 }
 .customer_icons {
-    margin: 100px;
-    display: flex;
-    gap: 20px;
+  margin: 100px;
+  display: flex;
+  gap: 20px;
 }
 .tea_field img {
-    width: 1599px;
-    height: 500px;
-    position: absolute;
-    z-index: -1;
+  width: 1599px;
+  height: 500px;
 }
 .tea_field h1 {
-    color: white;
-    font-optical-sizing: auto;
-    font-family: "Cormorant", serif;
+  font-optical-sizing: auto;
   font-weight: 300;
   font-size: 60px;
   font-style: normal;
   width: 789px;
   height: 120px;
-margin: 0 0 50px;
-}
-.tea_field p { 
-    color: white;
-    font-family: "Cormorant", serif;
-font-weight: 400;
-font-size: 24px;
-width: 558px;
-height: 58px;
+  margin: 0 0 50px;
 
 }
+.tea_field p {
+  font-weight: 400;
+  font-size: 24px;
+  width: 558px;
+  height: 58px;
+}
 .tea_field_text {
-    position: absolute;
-    bottom: 0;
-    right: 200px;
+  position: absolute;
+  bottom: 0;
+  right: 200px;
+  color: white;
+  font-family: "Cormorant", serif;
+}
+h2 {
+    font-family: "Cormorant";
+    font-style: italic;
+    font-weight: 300;
+    font-size: 40px;
+    text-align: center;
+    margin: 220px 0;
+    width: 704px;
+    height: 96px;
+}
+.choice_of_tea {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Cormorant";
+    font-weight: 400;
+    font-size: 24px;
+}
+.collection_of_tea {
+    display: flex;
+    margin: 218px 0 160px 0;
+}
+h3 {
+    text-align: center;
+    font-family: "Cormorant";
+    font-weight: 400;
+    font-size: 40px;
 }
