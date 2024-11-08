@@ -1,3 +1,7 @@
+@import url(https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC:regular);
+@import url(https://fonts.googleapis.com/css?family=Cormorant:300,regular,500,600,700,300italic,italic,500italic,600italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+
 * {
 margin: 0;
 padding: 0;
@@ -7,7 +11,13 @@ box-sizing: border-box;
 .logo {
 display: flex;
 flex-direction: column;
-
+text-align: center;
+}
+.logo p {
+    font-family: "IM Fell Great Primer SC Regular", serif;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
 }
 header {
     display: flex;
@@ -20,5 +30,42 @@ ul {
  display: flex;
  gap: 70px;   
  list-style: none;
- margin:0 50px;
+ margin:0 60px 0 250px;
+ font-family: "Open Sans", sans-serif;
+}
+.customer_icons {
+    margin: 100px;
+    display: flex;
+    gap: 20px;
+}
+.tea_field img {
+    width: 1599px;
+    height: 500px;
+    position: absolute;
+    z-index: -1;
+}
+.tea_field h1 {
+    color: white;
+    font-optical-sizing: auto;
+    font-family: "Cormorant", serif;
+  font-weight: 300;
+  font-size: 60px;
+  font-style: normal;
+  width: 789px;
+  height: 120px;
+margin: 0 0 50px;
+}
+.tea_field p { 
+    color: white;
+    font-family: "Cormorant", serif;
+font-weight: 400;
+font-size: 24px;
+width: 558px;
+height: 58px;
+
+}
+.tea_field_text {
+    position: absolute;
+    bottom: 0;
+    right: 200px;
 }
