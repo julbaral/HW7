@@ -1,8 +1,8 @@
 /*шрифт лого*/ @import url(https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC:regular); 
 /*шрифт 1 секция*/ @import url(https://fonts.googleapis.com/css?family=Cormorant:300,regular,500,600,700,300italic,italic,500italic,600italic,700italic);
 /*шрифт навигации*/ @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic); 
-/*шрифт цитаты*/ @import url(https://fonts.googleapis.com/css?family=Cormorant:300,regular,500,600,700,300italic,italic,500italic,600italic,700italic);
-
+/*шрифт заголовки*/ @import url(https://fonts.googleapis.com/css?family=Cormorant:300,regular,500,600,700,300italic,italic,500italic,600italic,700italic);
+/*шрифт отзывы*/ @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
 * {
   margin: 0;
   padding: 0;
@@ -75,6 +75,8 @@ h2 {
     margin: 220px 0;
     width: 704px;
     height: 96px;
+    text-align: center;
+    justify-content: center;
 }
 .choice_of_tea {
     display: flex;
@@ -93,4 +95,35 @@ h3 {
     font-family: "Cormorant";
     font-weight: 400;
     font-size: 40px;
+}
+.say_clients {
+  background-color:rgb(247, 242, 234);
+  width: 1600px;
+  height: 397px;
+}
+.say_clients h3{
+  padding: 30px 0 0 0;
+
+}
+.reviews_about_tea {
+  display: flex;
+  width: 1198px;
+  height: 169px;
+  margin: 60px;
+  font-family: Open Sans;
+  
+}
+.reviews_about_tea p {
+ font-style: italic;
+  font-weight: 300;
+  font-size: 16px; 
+}
+
+.client_reviews {
+  margin: 26px;
+  width: 280px;
+}
+.reviews_about_tea span {
+  font-weight: 600;
+  font-size: 20px;
 }
