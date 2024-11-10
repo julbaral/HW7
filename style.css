@@ -1,8 +1,13 @@
-/*шрифт лого*/ @import url(https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC:regular); 
-/*шрифт 1 секция*/ @import url(https://fonts.googleapis.com/css?family=Cormorant:300,regular,500,600,700,300italic,italic,500italic,600italic,700italic);
-/*шрифт навигации*/ @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic); 
-/*шрифт заголовки*/ @import url(https://fonts.googleapis.com/css?family=Cormorant:300,regular,500,600,700,300italic,italic,500italic,600italic,700italic);
-/*шрифт отзывы*/ @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+/*шрифт лого*/
+@import url(https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC:regular);
+/*шрифт 1 секция*/
+@import url(https://fonts.googleapis.com/css?family=Cormorant:300,regular,500,600,700,300italic,italic,500italic,600italic,700italic);
+/*шрифт навигации*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+/*шрифт заголовки*/
+@import url(https://fonts.googleapis.com/css?family=Cormorant:300,regular,500,600,700,300italic,italic,500italic,600italic,700italic);
+/*шрифт отзывы*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
 * {
   margin: 0;
   padding: 0;
@@ -24,15 +29,16 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 1200px;
+  width: 100%;
   height: 142px;
 }
 ul {
   display: flex;
-  gap: 70px;
+  gap: 60px;
   list-style: none;
-  margin: 0 60px 0 250px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans";
+  font-weight: 400;
+font-size: 18px;
 }
 .customer_icons {
   margin: 100px;
@@ -40,7 +46,7 @@ ul {
   gap: 20px;
 }
 .tea_field img {
-  width: 1599px;
+  width: 100%;
   height: 500px;
 }
 .tea_field h1 {
@@ -51,7 +57,6 @@ ul {
   width: 789px;
   height: 120px;
   margin: 0 0 50px;
-
 }
 .tea_field p {
   font-weight: 400;
@@ -67,43 +72,42 @@ ul {
   font-family: "Cormorant", serif;
 }
 h2 {
-    font-family: "Cormorant";
-    font-style: italic;
-    font-weight: 300;
-    font-size: 40px;
-    text-align: center;
-    margin: 220px 0;
-    width: 704px;
-    height: 96px;
-    text-align: center;
-    justify-content: center;
+  font-family: "Cormorant";
+  font-style: italic;
+  font-weight: 300;
+  font-size: 40px;
+  text-align: center;
+  margin: 220px 0;
+  width: 704px;
+  height: 96px;
+  text-align: center;
+  justify-content: center;
 }
 .choice_of_tea {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-family: "Cormorant";
-    font-weight: 400;
-    font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-size: 24px;
 }
 .collection_of_tea {
-    display: flex;
-    margin: 218px 0 160px 0;
+  display: flex;
+  margin: 218px 0 160px 0;
 }
 h3 {
-    text-align: center;
-    font-family: "Cormorant";
-    font-weight: 400;
-    font-size: 40px;
+  text-align: center;
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-size: 40px;
 }
 .say_clients {
-  background-color:rgb(247, 242, 234);
+  background-color: rgb(247, 242, 234);
   width: 1600px;
   height: 397px;
 }
-.say_clients h3{
+.say_clients h3 {
   padding: 30px 0 0 0;
-
 }
 .reviews_about_tea {
   display: flex;
@@ -111,12 +115,11 @@ h3 {
   height: 169px;
   margin: 60px;
   font-family: Open Sans;
-  
 }
 .reviews_about_tea p {
- font-style: italic;
+  font-style: italic;
   font-weight: 300;
-  font-size: 16px; 
+  font-size: 16px;
 }
 
 .client_reviews {
@@ -126,4 +129,49 @@ h3 {
 .reviews_about_tea span {
   font-weight: 600;
   font-size: 20px;
+}
+.tea_blog_section {
+  width: 1142px;
+  height: 619px;
+  margin: 150px;
+
+}
+.blog_cards_section {
+  display: flex;
+}
+.blog_cards_section_1 {
+  display: flex;
+}
+.blog_cards {
+  display: flex;
+  gap: 20px;
+  margin: 75px;
+  width: 542px;
+  height: 180px;
+}
+.blog_cards h4 {
+  width: 252px;
+  height: 86px;
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-size: 24px;
+}
+.blog_cards p {
+  font-family: Open Sans;
+  font-weight: 300;
+  font-size: 13px;
+  height: 28px;
+}
+.blog_cards button {
+  font-family: Open Sans;
+  font-weight: 300;
+  font-size: 13px;
+  border: none;
+  background-color: #fff;
+}
+.button_blog {
+width: 149px;
+height: 51px;
+background-color: #fff;
+border: 1px solid;
 }
