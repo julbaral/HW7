@@ -1,17 +1,18 @@
-/*шрифт лого*/
+
 @import url(https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC:regular);
-/*шрифт 1 секция*/
 @import url(https://fonts.googleapis.com/css?family=Cormorant:300,regular,500,600,700,300italic,italic,500italic,600italic,700italic);
-/*шрифт навигации*/
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
-/*шрифт заголовки*/
 @import url(https://fonts.googleapis.com/css?family=Cormorant:300,regular,500,600,700,300italic,italic,500italic,600italic,700italic);
-/*шрифт отзывы*/
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+} 
+body {
+  margin: 0 auto;
+  max-width: 1600px;
+  padding: 20px 20px;
 }
 p {
   font-family: Open Sans;
@@ -22,6 +23,7 @@ p {
   font-family: "Cormorant";
   font-weight: 400;
   font-size: 24px;
+  
  }
  h3 {
   text-align: center;
@@ -34,6 +36,7 @@ p {
   display: flex;
   flex-direction: column;
   text-align: center;
+  align-items: center;
 }
 .logo p, .logo span {
   font-family: "IM Fell Great Primer SC";
@@ -43,48 +46,53 @@ p {
 }
 header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  width: 100%;
+  width: 1200px;
+  margin: 28px auto;
 }
 header ul {
   display: flex;
-  justify-content:space-between;
-  gap: 70px;
+  width: 582px;
+  justify-content: space-between;
+  align-items: center;
   list-style: none;
-  margin: 0 60px 0 250px;
   font-family: "Open Sans", sans-serif;
 }
 .customer_icons {
-  margin: 100px;
+  width: 180px;
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
 }
-.tea_field img {
-  width: 100%;
-  height: 500px;
+.tea_field {
+background: url(../HW7/картинки/чайное\ поле.jpg);
+width: 1599px;
+height: 500px;
 }
 .tea_field h1 {
-  font-optical-sizing: auto;
+  font-family: "Cormorant", serif;
   font-weight: 300;
   font-size: 60px;
   font-style: normal;
   width: 789px;
   height: 120px;
-  margin: 0 0 50px;
+  margin:0 0 10px 0;
 }
 .tea_field p {
+  font-family: "Cormorant", serif;
   font-weight: 400;
   font-size: 24px;
   width: 558px;
   height: 58px;
+  margin: 20px 0 48px;
 }
 .tea_field_text {
-  position: absolute;
-  bottom: 0;
-  right: 200px;
-  color: white;
-  font-family: "Cormorant", serif;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  color: #fff;
+  padding-top: 245px;
+  padding-left: 200px;
 }
 h2 {
   font-family: "Cormorant";
@@ -92,11 +100,15 @@ h2 {
   font-weight: 300;
   font-size: 40px;
   text-align: center;
-  margin: 220px 0;
   width: 704px;
   height: 96px;
   text-align: center;
   justify-content: center;
+  margin: 150px auto 150px;
+}
+.our_collection {
+  width: 1200px;
+  margin: 150px auto;
 }
 .choice_of_tea {
   display: flex;
@@ -107,22 +119,27 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin: 218px 0 160px 0;
-  justify-content: center;
+  margin: 60px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
 }
 .say_clients {
   background-color: rgb(247, 242, 234);
-min-width: 100%;
+  width: 1600px;
+  height: 397px;
+  margin: 150px auto;
 }
 .say_clients h3 {
-  padding: 30px 0 0 0;
+  padding: 60px;
 }
 .reviews_about_tea {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 1198px;
+  margin: 0 auto 60px;
   flex-wrap: wrap;
-  margin: 60px;
+  align-items: center;
+  justify-content: space-between;
   font-family: Open Sans;
 }
 .reviews_about_tea p {
@@ -132,25 +149,41 @@ min-width: 100%;
 }
 
 .client_reviews {
-  margin: 26px;
+  width: 280px;
 }
 .reviews_about_tea span {
   font-weight: 600;
   font-size: 20px;
   font-family: Open Sans;
+  margin: 10px 0 0 0;
 }
 .tea_blog_section {
-min-width: 100%;
-
+  display: flex;
+  width: 1142px;
+  margin: 150px auto;
+  height: 619px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.tea_blog_section h3 {
+  margin: 60px;
+}
+.tea_blog_section button {
+  margin:0 auto;
 }
 .blog_cards_section {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
+  height: 400px;
+  
 }
 .blog_cards {
   display: flex;
-  gap: 20px;
-  margin: 75px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 542px;
+  height: 180px;
 }
 .blog_cards h4 {
   width: 252px;
@@ -161,46 +194,82 @@ min-width: 100%;
   height: 28px;
 }
 .blog_cards button {
+  margin: 60px auto 0 0;
+}
+.blog_cards button,
+.feedback_form_submit button {
   font-family: Open Sans;
   font-weight: 300;
   font-size: 13px;
   border: none;
   background-color: #fff;
+  justify-content: center;
 }
-.button_blog {
+.button_blog,
+.feedback_form_submit button {
 width: 149px;
 height: 51px;
 background-color: #fff;
-border: 1px solid;
+border: 0.1px solid black;
+}
+.feedback {
+  background-color: rgb(247, 242, 234);
+  width: 1600px;
+  height: 418px;
+  margin: 150px 0 150px 0;
+}
+.feedback h3 {
+  padding: 100px 0 0 200px;
+  text-align: left;
 }
 
 .feedback p {
   font-family: Open Sans;
   font-size: 20px;
   font-weight: 300;
-  width: 50%;
+  width: 580px;
+  height: 120px;
+  margin: 50px 0 0 200px;
 }
 .feedback input {
 border: none;
+background-color: rgb(247, 242, 234);
   border-bottom: 1px solid;
-align-self: start;
-margin: 5px;
+  width: 439px;
+  margin:0 25px 0 0;
+  font-family: Open Sans;
 }
 .feedback_privacy {
   display: flex;
+  flex-wrap: wrap;
+}
+.feedback_privacy input {
+  width: 10px;
 }
 .feedback_privacy p {
 font-size: 13px;
-margin: 5px;
+width: 560px;
+height: 54px;
+margin: 12px;
 }
 .feedback_form {
   display: flex;
+  flex-wrap: wrap;
+}
+.feedback_form p {
+  width: 560px;
+}
+.feedback_form_submit {
+  margin: 0 0 0 40px;
+}
+.our_priorities{
+  width: 1200px;
 }
 .priorities {
   display: flex;
-}
-.priority {
-  padding: 50px;
+  width: 1199px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .priority h4 {
   font-family: Open Sans;
@@ -216,9 +285,15 @@ margin:0 0 10px 0;
 }
 footer {
   background-color: #F7F2EA;
+  width: 1600px;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
-
+.footer_site_info {
+  display: flex;
+  flex-wrap: wrap;
+}
 footer li {
   list-style: none;
 margin: 10px;
@@ -229,6 +304,8 @@ font-size: 16px;
 }
 blockquote {
   text-align: center;
+  width: 269px;
+  height: 162px;
   margin: 50px;
   padding: 50px;
 }
@@ -243,6 +320,8 @@ font-size: 12px;
 }
 .contacts p {
   font-size: 13px; 
+  width: 270px;
+  height: 287px;
 }
 .communication {
   display: flex;
@@ -257,4 +336,13 @@ font-size: 12px;
   display: flex;
   gap: 10px;
   margin: 10px;
+}
+.footer_copyright {
+  display: flex;
+  justify-content: space-between;
+}
+.footer_copyright_payment_method {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
